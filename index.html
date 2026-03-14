@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labjot Singh | Software Developer</title>
+
+    <link type="logo" rel="icon" href="Assets/images/title-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "neo-yellow": "#FBFF48",
+              "neo-pink": "#FF70A6",
+              "neo-blue": "#3B82F6",
+              "neo-green": "#33FF57",
+              "neo-purple": "#A855F7",
+              "neo-orange": "#FF9F1C",
+              "neo-red": "#FF2A2A",
+              "neo-white": "#FFFDF5",
+              "neo-black": "#121212",
+            },
+            fontFamily: {
+              display: ['"Space Grotesk"', "sans-serif"],
+              mono: ['"JetBrains Mono"', "monospace"],
+            },
+            boxShadow: {
+              hard: "4px 4px 0px 0px #000",
+              "hard-sm": "2px 2px 0px 0px #000",
+              "hard-lg": "8px 8px 0px 0px #000",
+              "hard-xl": "12px 12px 0px 0px #000",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow"
+  >
+    <!-- Progress Bar -->
+    <div
+      class="fixed top-0 left-0 h-2 bg-neo-green z-[60] border-b-2 border-black"
+      id="progressBar"
+      style="width: 0%"
+    ></div>
+
+    <!-- Nav Bar -->
+    <nav class="fixed top-0 w-full z-50 px-4 py-4 pointer-events-none">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center pointer-events-auto"
+      >
+        <a
+          href="#"
+          class="bg-neo-white border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover"
+        >
+          LABJOT.dev
+        </a>
+
+        <div
+          class="hidden md:flex gap-4 bg-white border-2 border-black p-2 shadow-hard"
+        >
+          <a
+            href="#about"
+            class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover"
+            >ABOUT</a
+          >
+          <a
+            href="#skills"
+            class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover"
+            >SKILLS</a
+          >
+          <a
+            href="#projects"
+            class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover"
+            >PROJECTS</a
+          >
+          <a
+            href="#experience"
+            class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover"
+            >WORK</a
+          >
+          <a
+            href="#contact"
+            class="px-3 py-1 font-mono font-bold text-sm bg-neo-yellow border border-black hover:bg-neo-pink transition-colors cursor-hover"
+            >CONTACT ME</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black"
+    >
+      <div
+        class="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-red border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12"
+      ></div>
+      <div
+        class="absolute bottom-1/3 right-[10%] w-24 h-24 bg-neo-red rounded-full border-4 border-black shadow-hard hidden lg:block animate-bounce"
+      ></div>
+      <div
+        class="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none"
+      >
+        CODE
+      </div>
+
+      <div class="relative z-10 text-center max-w-5xl">
+        <h1
+          class="text-[13vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-normal mb-6 reveal mix-blend-darken"
+        >
+          SOFTWARE<br />
+          <span
+            class="text-white text-stroke-black"
+            style="-webkit-text-stroke: 3px black"
+            >DEVELOPER</span
+          >
+        </h1>
+
+        <p
+          class="font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1"
+        >
+          Computer Science student and full-stack developer focused on building
+          modern, scalable web applications.
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center gap-6 reveal">
+          <a
+            href="Assets/Resume/Labjot Singh CV.pdf"
+            download
+            class="bg-neo-white text-black border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-2"
+          >
+            <i class="ri-download-line"></i> DOWNLOAD CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="border-b-4 border-black bg-neo-red py-3 relative z-20">
+      <div class="marquee-container font-mono font-bold text-2xl text-white">
+        <div class="marquee-content">
+          /// OPEN FOR WORK /// SOFTWARE DEVELOPMENT /// FULL STACK DEVELOPMENT
+          /// WEB APPLICATIONS /// MERN STACK /// DATA ANALYTICS /// UI/UX
+          DESIGN
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-24 px-4 max-w-7xl mx-auto border-4 border-black bg-white my-12 shadow-hard-lg"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 reveal">
+          <div
+            class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group"
+          >
+            <img
+              src="Assets/images/profile.png"
+              alt="Labjot"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div class="md:col-span-8 flex flex-col justify-center reveal">
+          <h2 class="text-6xl font-black uppercase mb-6">ABOUT ME</h2>
+          <p class="font-mono text-xl leading-relaxed mb-6">
+            I'm Labjot Singh, a Computer Science student and full-stack
+            developer passionate about building modern web applications and
+            intuitive digital experiences. I enjoy creating clean, responsive
+            interfaces and scalable backend systems that turn ideas into real,
+            functional products.
+          </p>
+          <p
+            class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4"
+          >
+            > Developing an AI-integrated MERN stack E-learning platform as my
+            Final Year Project. <br />
+            > Experienced with JavaScript, React, Node.js, PHP, and modern
+            database systems. <br />
+            > Course Representative and PALS Leader at De Montfort University.
+            <br />
+            > Passionate about building intuitive landing pages and user-focused
+            web applications.
+          </p>
+
+          <div class="flex gap-4">
+            <div
+              class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent"
+            >
+              📍 LOCATION: Leicester
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section
+      id="skills"
+      class="py-20 bg-neo-black text-neo-white border-y-4 border-black relative overflow-hidden"
+    >
+      <div class="max-w-[1400px] mx-auto px-4 relative z-10">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-white pb-4"
+        >
+          <h2
+            class="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter"
+          >
+            TECHNICAL<span class="text-neo-green">_SKILLS</span>
+          </h2>
+        </div>
+
+        <div
+          class="flex flex-wrap justify-center md:justify-start border-2 border-white/20"
+        >
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              JAVASCRIPT
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              Java
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              PHP
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              C++
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              PYTHON
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              REACT.JS
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              NODE.JS
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              EXPRESS.JS
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              MONGODB
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              HTML5
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              TAILWIND CSS
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              MYSQL/SQL
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              GIT & GITHUB
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              PYSPARK & SPARK SQL
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              ML ALGORITHMS
+            </div>
+          </div>
+
+          <div
+            class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"
+          >
+            <div
+              class="text-white group-hover:text-black font-black font-display text-xl uppercase"
+            >
+              RESTFUL API
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="py-24 bg-neo-yellow border-t-4 mt-12 border-black px-4 overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto">
+        <h2
+          class="text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black"
+          style="-webkit-text-stroke: 3px black"
+        >
+          PROJECTS
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6"
+            >
+              <img
+                src="Assets/images/Student Course Hub.png"
+                alt="Student Course Hub"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors"
+                >
+                  Student Course Hub
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Developed a full-stack web application that allows students to
+                  explore university programs and express interest in courses.
+                  Includes an admin panel for managing programs.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">HTML</span>
+                  <span class="bg-neo-black text-white px-2 py-1">CSS</span>
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >JavaScript</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1">PHP</span>
+                  <span class="bg-neo-black text-white px-2 py-1">MYSQL</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all"
+            >
+              <img
+                src="Assets/images/Beats.png"
+                alt="Beats Website"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-blue transition-colors"
+                >
+                  Beats
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Designed a sleek and immersive landing page for Beats
+                  Headphones using HTML and CSS.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">HTML</span>
+                  <span class="bg-neo-black text-white px-2 py-1">CSS</span>
+                </div>
+              </div>
+              <a
+                href="https://www.linkedin.com/posts/labjot-singh-690a8b240_webdevelopment-html-css-activity-7148710248868990977-7Rur?utm_source=share&utm_medium=member_desktop&rcm=ACoAADv1zgwBpd76J794AoqcdigIXoP_ImY13kU"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all"
+            >
+              <img
+                src="Assets/images/Spotify.png"
+                alt="Spotify UI Clone"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-pink transition-colors"
+                >
+                  Spotify UI Clone
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Built a Spotify-inspired web UI clone using HTML and CSS,
+                  focusing on layout accuracy, component-based design, and user
+                  experience.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">HTML</span>
+                  <span class="bg-neo-black text-white px-2 py-1">CSS</span>
+                  <span class="bg-neo-black text-white px-2 py-1">Flexbox</span>
+                  <span class="bg-neo-black text-white px-2 py-1">Git</span>
+                </div>
+              </div>
+              <a
+                href="https://labjot98.github.io/Spotify-UI-clone/"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all"
+            >
+              <img
+                src="Assets/images/Loan.jpg"
+                alt="Loan Prediction Model"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-orange transition-colors"
+                >
+                  Loan Prediction Model
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Built a machine learning model to predict loan approval
+                  outcomes based on applicant financial data. Implemented data
+                  preprocessing, feature engineering, and classification
+                  algorithms to evaluate model accuracy.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">Python</span>
+                  <span class="bg-neo-black text-white px-2 py-1">PySpark</span>
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Machine Learning</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Spark MLlib</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Matplotlib</span
+                  >
+                </div>
+              </div>
+              <a
+                href="https://github.com/Labjot98/Loan-Prediction-Model"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6"
+            >
+              <img
+                src="Assets/images/FYMS.png"
+                alt="Final Year Module Selection Tool"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors"
+                >
+                  Final Year Module Selection Tool
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Developed a desktop application that allows university
+                  students to select their final year modules while ensuring
+                  credit limits and prerequisite requirements are satisfied. The
+                  system provides an interactive interface for managing module
+                  choices and validating selections.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">Java</span>
+                  <span class="bg-neo-black text-white px-2 py-1">JavaFX</span>
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Object-Oriented Programming</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Scene Builder</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1">MVC</span>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all"
+            >
+              <img
+                src="Assets/images/Crime Data Analysis.jpg"
+                alt="Crime Data Analysis"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-blue transition-colors"
+                >
+                  Crime Data Analysis
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  This project applies data cleaning, transformation,
+                  visualisation, and exploratory data analysis (EDA) techniques
+                  to understand how crime varies over time, location, and type.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Data Analysis</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1">Python</span>
+                  <span class="bg-neo-black text-white px-2 py-1">PySpark</span>
+                  <span class="bg-neo-black text-white px-2 py-1"
+                    >Matplotlib</span
+                  >
+                  <span class="bg-neo-black text-white px-2 py-1">Seaborn</span>
+                </div>
+              </div>
+              <a
+                href="https://github.com/Labjot98/Crime-Data-Analysis"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all"
+            >
+              <img
+                src="Assets/images/Real Estate.png"
+                alt="Real Estate Webpage"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-pink transition-colors"
+                >
+                  Real Estate Webpage
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Designed a real estate website for browsing properties with a
+                  clean user interface.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">HTML</span>
+                  <span class="bg-neo-black text-white px-2 py-1">CSS</span>
+                  <span class="bg-neo-black text-white px-2 py-1">Flexbox</span>
+                </div>
+              </div>
+              <a
+                href="https://www.linkedin.com/posts/labjot-singh-690a8b240_webdesign-webdevelopment-frontend-activity-7152673314702786561-ZzZh?utm_source=share&utm_medium=member_desktop&rcm=ACoAADv1zgwBpd76J794AoqcdigIXoP_ImY13kU"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <article
+            class="reveal group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20"
+          >
+            <div
+              class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all"
+            >
+              <img
+                src="Assets/images/Amazon UI.png"
+                alt="Amazon UI Clone"
+                class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3
+                  class="text-4xl font-black uppercase mb-2 group-hover:text-neo-orange transition-colors"
+                >
+                  Amazon UI Clone
+                </h3>
+                <p class="font-mono text-sm mb-4 max-w-xs">
+                  Developed a front-end clone of the Amazon homepage to practice
+                  modern layout design and responsive web development. Recreated
+                  key UI components including the navigation bar, product
+                  sections, and responsive grid layouts.
+                </p>
+                <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                  <span class="bg-neo-black text-white px-2 py-1">HTML5</span>
+                  <span class="bg-neo-black text-white px-2 py-1">CSS</span>
+                  <span class="bg-neo-black text-white px-2 py-1">JS</span>
+
+                  >
+                </div>
+              </div>
+              <a
+                href="https://www.linkedin.com/posts/labjot-singh-690a8b240_html-css-webdevelopment-activity-7146926317303730176-DWnf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADv1zgwBpd76J794AoqcdigIXoP_ImY13kU"
+                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm"
+              >
+                <i class="ri-arrow-right-up-line text-2xl"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- End Projects -->
+        </div>
+
+        <!-- <div class="text-center mt-24">
+          <a
+            href="https://github.com/Labjot98?tab=repositories"
+            class="inline-block bg-neo-black text-white px-12 py-5 font-bold font-mono text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover"
+          >
+            VIEW GITHUB
+          </a>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Other Experiences -->
+    <section id="experience" class="py-24 px-4 max-w-7xl mx-auto">
+      <h2
+        class="text-5xl md:text-8xl font-black uppercase mb-12 tracking-tighter text-center"
+      >
+        Other Experiences
+      </h2>
+
+      <div class="relative border-l-4 border-black ml-4 md:ml-10 space-y-12">
+        <div class="reveal relative pl-8 md:pl-16">
+          <div
+            class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-red border-4 border-black"
+          ></div>
+          <div
+            class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4"
+            >
+              <h3 class="text-3xl font-black uppercase">
+                Course Representative
+              </h3>
+              <span
+                class="font-mono font-bold bg-neo-black text-white px-2 py-1"
+                >Sept 2023 - Present</span
+              >
+            </div>
+            <p class="font-mono text-xl mb-2 text-neo-red font-bold">
+              @ De Montfort University
+            </p>
+            <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
+              <li>
+                Actively raise academic issues and provide feedback to faculty,
+                influencing policies and improving the student experience.
+              </li>
+              <li>
+                Collaborate with fellow course reps across the university to
+                enhance academic representation.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="reveal relative pl-8 md:pl-16">
+          <div
+            class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-red border-4 border-black"
+          ></div>
+          <div
+            class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4"
+            >
+              <h3 class="text-3xl font-black uppercase">Warehouse Operative</h3>
+              <span
+                class="font-mono font-bold bg-neo-black text-white px-2 py-1"
+                >Sept 2023 - Present</span
+              >
+            </div>
+            <p class="font-mono text-xl mb-2 text-neo-red font-bold">
+              @ DPD UK
+            </p>
+            <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
+              <li>
+                Maintain high attention to detail and organization in a
+                fast-paced environment, working with the team to meet
+                operational targets and deadlines.
+              </li>
+              <li>
+                Process and track parcels accurately using scanning systems,
+                ensuring efficient workflow and data integrity across the
+                warehouse.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal relative pl-8 md:pl-16">
+          <div
+            class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-red border-4 border-black"
+          ></div>
+          <div
+            class="bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-between items-start md:items-center border-b-2 border-dashed border-gray-300 pb-4 mb-4"
+            >
+              <h3 class="text-3xl font-black uppercase">
+                Retail Assistant Volunteer
+              </h3>
+              <span
+                class="font-mono font-bold bg-neo-black text-white px-2 py-1"
+                >Aug 2023 - Jan 2025</span
+              >
+            </div>
+            <p class="font-mono text-xl mb-2 text-neo-red font-bold">
+              @ British Heart Foundation
+            </p>
+            <ul class="list-disc list-inside font-mono text-gray-700 space-y-1">
+              <li>
+                Collaborated with other retail staff to ensure all customer
+                needs are met promptly.
+              </li>
+              <li>
+                Performed cashier duties and acting as the customer face for the
+                charity, building a rapport with the public and helping to
+                improve my communication skills.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
+      <div
+        class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12"
+      >
+        <div
+          class="absolute -top-10 -left-6 bg-neo-red border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]"
+        >
+          <span class="font-black text-2xl">Let's Connect</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">
+              Let's<br />Talk<br />Code.
+            </h2>
+            <p class="font-mono text-lg mb-8 text-gray-600">
+              Currently open to freelance projects, collaborations, and
+              full-time opportunities. If you have an idea or project in mind,
+              let's build something great together.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"
+                >
+                  <i class="ri-mail-line text-xl"></i>
+                </div>
+                <a
+                  href="mailto:labjotsingh9874@gmail.com"
+                  class="text-xl font-bold hover:bg-neo-blue cursor-hover"
+                >
+                  labjotsingh9874@gmail.com
+                </a>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"
+                >
+                  <i class="ri-map-pin-line text-xl"></i>
+                </div>
+                <span class="text-xl font-bold"
+                  >Leicester | United Kingdom</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form
+            id="contact-form"
+            class="space-y-6 bg-gray-50 p-6 border-2 border-black"
+            action="https://formspree.io/f/xwvrqnol"
+            method="POST"
+          >
+            <div class="flex flex-col">
+              <label
+                for="name"
+                class="font-mono font-bold mb-1 uppercase text-xs"
+              >
+                Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label
+                for="email"
+                class="font-mono font-bold mb-1 uppercase text-xs"
+              >
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <label
+                for="message"
+                class="font-mono font-bold mb-1 uppercase text-xs"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover"
+            >
+              SEND
+            </button>
+
+            <p id="form-status" class="font-mono text-sm"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-black text-white py-16 px-4 border-t-8 border-neo-green font-mono relative overflow-hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10"
+      >
+        <div class="col-span-1 md:col-span-2">
+          <h2 class="text-4xl font-black mb-6">LABJOT.dev</h2>
+          <p class="text-gray-400 max-w-sm">
+            Turning ideas into scalable digital products through thoughtful
+            design and clean, efficient code.
+          </p>
+        </div>
+
+        <div>
+          <h3
+            class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2"
+          >
+            LINKS
+          </h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <a
+                href="#"
+                class="hover:text-white hover:underline decoration-neo-red decoration-2 cursor-hover"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="hover:text-white hover:underline decoration-neo-red decoration-2 cursor-hover"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="hover:text-white hover:underline decoration-neo-red decoration-2 cursor-hover"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-white hover:underline decoration-neo-red decoration-2 cursor-hover"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3
+            class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2"
+          >
+            SOCIALS
+          </h3>
+          <div class="flex gap-4">
+            <a
+              href="https://www.instagram.com/lovejot_sandhu98"
+              class="text-2xl hover:text-neo-red transition-colors cursor-hover"
+              ><i class="ri-instagram-fill"></i
+            ></a>
+            <a
+              href="https://github.com/Labjot98"
+              class="text-2xl hover:text-neo-yellow transition-colors cursor-hover"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/labjot-singh-690a8b240/"
+              class="text-2xl hover:text-neo-blue transition-colors cursor-hover"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm"
+      >
+        <p>© 2026 LABJOT.dev</p>
+      </div>
+
+      <div
+        class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center"
+      >
+        CREATE
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
